@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="Template.css">
+
+    <style>
+        .content{
+            margin-top: 60px;
+            display: flex;
+        }
+        .title h1{
+            /* background-color: rgba(72, 245, 101, 0.62); */
+            padding: 2px 6px;
+            width: max-content;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+            font-size: 160%;
+            padding-top: 30px;
+            position: absolute;
+            color: aliceblue;
+            text-shadow: 2px 2px 3px black;
+            top: 150px;
+            right: 0;
+            left: 0;
+        }
+        .homeimage{
+            -webkit-filter: blur(4px) saturate(0.25);
+            filter: blur(4px) saturate(0.25);
+            /* -webkit-filter: opacity(50%); */
+            width: 100%;
+            margin-top: -5px;
+        }
+        h3 {text-align: center;}
+        
+        .content div{
+            width: 30px;
+        }
+        .content .main{
+            flex-grow: 4;
+        }
+        .content .sidebar{
+            background-color: rgb(88, 250, 210);
+            flex-grow: 1;
+            margin-top: 40px;
+            text-align: center;
+            height: 80%;
+            order: 2;
+            box-shadow: 0px 0px 15px 3px rgba(77, 77, 77, 0.4);
+        }
+        .main p{
+            padding: 0 20px;
+            margin: 20px 0;
+            line-height: 200%;
+        }
+        .sidebar ul li{
+            padding-bottom: 15px;
+            padding-left: 0;
+            list-style: none;
+        }
+     .sidebar ul{padding-left: 0;}
+     .isi_nama{
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+     }.sidebar ul li{transition: 450ms;}
+     .sidebar ul li a:hover{
+        color: white;
+        font-weight: 800;
+     }
+    </style>
+</head>
+<body>
+    <navbar>
+        <span>Home</span>
+        <span>Student</span>
+        <span>About</span>
+        <span>Place</span>
+        <span><A href="sinau.html">Company</A></span>
+    </navbar>
+    <img src="home.jpg" alt="home image" class="homeimage">
+    <div class="title"><h1>HOME PAGE</h1></div>
+    <div class="content">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Tentang kami</a></li>
+                <li><a href="#">Tentang pembuat </a></li>
+                <li><a href="#">Background karyawan</a></li>
+                <li><a href="#">Kursus di rumah</a></li>
+                <li><a href="#">Pembukaan karyawan</a></li>
+                <li><a href="#">Universitas kami</a></li>
+                <li><a href="#">Minta bantuan</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <span class="isi_nama" id="name">
+            </span>
+            <h3>Selamat Datang di web kami</h3>
+            <p>
+                Web kami menyediakan beberapa tampilan baru yang menarik
+                kami menyediakan pelayanan agar pengguna bahagia dan senang.
+                Apabila ada sesuatu yang salah mohon maaf, dikarenakan web ini 
+                masih dalam pembuatan awal dan perlu dikembangkan lagi. Berikan kesan 
+                anda terhadap web kami. Disini kami memberikan pelayanan seperti fitur 
+                yang menampilkan furnitur-furnitur rumah tangga yang menarik dan bagus-bagus.
+                Terdapat kursi, kasur, perabotan rumah tangga, dan lain sebagainya. Untuk 
+                masalah perabotan rumah kami bisa melayani hal tersebut
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                elit. Temporibus tempora, ratione dolorum maxime 
+                eligendi illo perspiciatis a, modi quod sit nam libero 
+                in omnis et hic at accusamus id voluptatum cupiditate 
+                ea. Officia nisi et suscipit. Nobis, dignissimos. Et 
+                similique dolore temporibus laboriosam accusantium in 
+                delectus soluta beatae odio praesentium. Lorem ipsum, dolor 
+                sit amet consectetur adipisicing elit. Perferendis 
+                deserunt ducimus ratione dicta nulla neque eius 
+                recusandae, vero quis, hic beatae et asperiores quam. 
+                Consequuntur deleniti inventore quia dolore nulla.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <span>Copyright by Royhan</span>
+    </footer>
+    <script src="hoome.js"></script>
+</body>
+</html>

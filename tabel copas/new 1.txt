@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<tittle>penggunaan ALIGN</tittle>
+	</head>
+	<body>
+		<table border="1">
+		<caption>Daftar wiraniaga</caption>
+		<tr>
+		<th colspan ="2" rowspan = "2">WIRANIAGA</th>
+		<th colspan ="3">KOTA</th>
+		</tr>
+		<tr>
+		<th>SEMARANG</th>
+		<th>Kudus</th><th>Solo</th>
+		<tr>
+		<tr>
+		<th rowspan ="2">Jenis Kelamin</th>
+		<th>Pria</th>
+		<th align= "right">30</td>
+		<td align= "right">20</td>
+		<td align= "right">30</td>
+		</tr>
+		<tr>
+		<th>wanita</th>
+		<td align= "right">20</td>
+		<td align= "right">8</td>
+		<td align= "right">18</td>
+		</tr>
+		</table>
+	</body>
+ </html>

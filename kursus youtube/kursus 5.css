@@ -1,0 +1,49 @@
+.tahoma{
+			font-family:Tahoma;
+			font-weight:bold;
+			font-size:20px;
+			}
+			.arial{
+			font-family:arial;
+			}.ariala{
+			font-family:arial;
+			align:auto;
+			}
+			.verdana{
+			font-family:verdana;}
+			.a{
+			background-color:green;
+			color:white;
+			padding:10px 20px 10px;
+			border:none;
+			border-radius:4px;
+			cursor:pointer;
+			}
+			.macbook{
+			font-size:20px;
+			font-weight:bold;
+			}
+			.great{
+			font-size:30px;
+			font-weight:bold;
+			}
+			.buy{
+			background-color:blue;
+			color:white;
+			font-weight:bold;
+			padding:10px 20px 10px;
+			border:none;
+			border-radius:30px;
+			cursor:pointer;
+			}.center{ text-align: center;}
+			.judul{
+			font-size:160%;
+			color:black;
+			}
+			.merah{
+			color: red;
+			}
+			.name{
+			color:black;}
+			.nick{
+			color:blue;}

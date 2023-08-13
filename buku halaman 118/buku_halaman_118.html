@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan halaman 118</title>
+    <style>
+        form{
+            width: 550px;
+            display: flex;
+            margin-top: 60px;
+            padding: 15px 20px 30px;
+            border: 1px solid rgb(250, 193, 50);
+            border-radius: 3px;
+            background-color: rgb(224, 224, 224);
+        }
+        label, input{
+            display: block;
+        }
+        .lahir input{
+            display: inline-block;
+        }
+        legend{
+            position: absolute;
+            padding: 4px 7px;
+            color: white;
+            top: 47px;
+            background-color: rgb(250, 193, 50);
+        }
+         input, select{
+            margin-top: 23px;
+            margin-left: -18px;
+            margin-right: 20px;
+        }
+        label{
+            margin-top: 25px;
+            font-weight: bold;
+        }
+        button{
+            background-color: rgb(250, 193, 50);
+            color: white;
+            border: none;
+            padding: 4px 7px;
+            position: relative;
+            border-radius: 5px;
+            top: 30px;
+            right: 20px;
+        }
+
+        input:hover, select:hover{
+            box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.192);
+        }
+
+        button:hover{
+            box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.459);
+            text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.363);
+        }
+
+        input{
+            border-radius: 2px;
+            border: 1px solid rgb(250, 193, 50);
+        }
+        #menama{
+            margin-top: 26px;
+        }
+        #agama{
+            display: block;
+            margin-top: 27px;
+        }
+        </style>
+</head>
+<body>
+    <form>
+       <legend>Pekerjaan</legend>
+       <div class="isi_label">
+           <label for="nama">Nama</label>
+            <label for="ktp">KTP</label>
+            <label for="kelamin">Kelamin</label>
+            <label for="ttl">TTL</label>
+            <label for="agama">Agama</label>
+            <label for="status">Status</label>
+            <div class="button">
+                <button>Browse</button>
+                <button>Simpan</button>
+            </div>
+        </div>
+        <div class="isi_form">
+            <input type="text" name="nama" id="menama">
+            <input type="text" name="KTP">
+            <select name="kelamin" id="kelamin">
+                <option value ="laki">Laki-laki</option>
+                <option value ="perempuan">Perempuan</option>
+            </select>
+            <div class="lahir">
+                <input type="text" name="tanggal">
+                <input type="text" name="tanggal">
+            </div>
+            <select name="agama" id="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katolik">Katolik</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+                <option value="konghucu">Konghucu</option>
+            </select>
+            <select name="status" id="status">
+                <option value="kawin">Kawin</option>
+                <option value="Belum">Belum Kawin</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

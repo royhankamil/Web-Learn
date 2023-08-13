@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan swicth dan kawan-kawan</title>
+    <style>
+        body{
+            text-align: center;
+            color: rgb(7, 110, 29);
+        }
+        .if_statement, .for, .switch{
+            margin-bottom: 40px;
+        }
+        .for div{
+            margin-top: 5px;
+        }
+        .tulis_urutan, .tulis_rata{
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ini adalah latihan if statement, for, switch, array</h1>
+    <form action="" autocomplete="off">
+        <div class="if_statement">
+            <input id="nilai" type="checkbox">
+            <label for="nilai">Masukkan nilai</label>
+        </div>
+        <div class="for">
+            <label for="loop">Masukkan Berapa Kali Looping</label>
+            <input id="loop" type="number" min="0" max="100">
+            <button type="button" id="btn">Loop sekarang</button>
+            <div class="isiFor"></div>
+        </div>
+        <div class="switch">
+            <label for="lahir">Masukkan Bulan Lahir Anda</label>
+            <input type="text" id="lahir" maxlength="2">
+        </div>
+        <div class="array">
+            <h3>input array dan cari rata rata</h3>
+            <label for="index0">indeks ke 0</label>
+            <input type="text" id="index0" maxlength="6"><br>
+            <label for="index1">indeks ke 1</label>
+            <input type="text" id="index1" maxlength="6"><br>
+            <label for="index2">indeks ke 2</label>
+            <input type="text" id="index2" maxlength="6"><br>
+            <label for="index3">indeks ke 3</label>
+            <input type="text" id="index3" maxlength="6"><br>
+            <label for="index4">indeks ke 4</label>
+            <input type="text" id="index4" maxlength="6"><br>
+            <label for="index5">indeks ke 5</label>
+            <input type="text" id="index5" maxlength="6"><br><br>
+            <button type="button" id="urut">Urutkan Array</button>
+            <button type="button" id="rata">Cari Rata Rata Array</button>
+            <div class="tulis_urutan"></div>
+            <div class="tulis_rata"></div>
+        </div>
+    </form>
+    <script src="latihan.js"></script>
+</body>
+</html>

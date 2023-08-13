@@ -1,0 +1,15 @@
+			body{
+				text-align:center;
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+				}
+			.model{
+				font-family:monstserrat;
+				font-weight:bold;
+				margin-bottom:0;
+			}
+			.isi{
+				font-family:monstserrat;
+				margin-top:5px;
+			}

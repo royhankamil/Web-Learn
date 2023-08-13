@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>sinau</title>
+		<link rel="stylesheet" href="Template.css">
+		<style>
+			#warn{
+				display: none;
+				color: red;
+				margin-top: -18px;
+				letter-spacing: 0;
+				font-size: 16px;
+			}
+			input, textarea{
+				border: 1px solid rgb(60, 96, 117);
+				border-radius: 4;
+			}
+			h3:hover{
+				color: rgb(15, 73, 199);
+			}
+			
+			label,input, textarea{
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			
+			button:hover, input:hover, textarea:hover{
+				border-color: rgb(15, 73, 199);
+				transition: 0.22s;
+				box-shadow: 0 0 10px 2px rgb(150, 150, 150);
+			}
+
+			button{
+				border: none;
+				font-weight: bold;
+				padding: 10px 20px 10px;
+				border-radius: 15px;
+				font-size: 14px;
+				background-color: rgb(60, 96, 117);
+				color: white;
+				margin-right: 8px;
+			}
+			.jenis{display: inline-block;}
+			.pulau{padding-top: 20px;}
+			.container {
+				width: 275px;
+				padding: 10px 70px 20px 50px;
+				border: 2px solid rgb(60, 96, 117);
+				background-color: rgb(221, 221, 221);
+				box-shadow: -2px 2px 10px black;
+				margin: 100px auto;
+				border-radius: 10px;
+			}
+			input:valid, textarea:valid{
+				border: inherit;
+			}
+			input:invalid textarea:invalid{
+				border: 1px solid red;
+			}
+
+			h1 .title{
+				text-align: center;
+				margin-bottom: 25px;
+			}
+
+			h1 #isiData{
+				font-size: 18px;
+				font-weight: 500;
+				display: flex;
+			}
+
+			h1 #isiData .leftSide{
+				order: 1;
+				width: 200px;
+			}
+
+			h1 #isiData .rightSide{
+				order: 1;
+			}
+			</style>
+	</head>
+	<body>
+		<navbar>
+			<span><a href = "home.html">Home</a></span>
+			<span>Student</span>
+			<span>About</span>
+			<span>Place</span>
+			<span>Company</span>
+		</navbar>
+		<form autocomplete="off">
+			<div class="container">
+				<legend><h3>DATA &nbsp&nbspANDA</h3></legend>
+				<table>
+					<tr>
+						<td class="input-awal">
+							<label for="nama" title="nama">Nama</label></br>
+							<label for="kelas" title="kelas">Kelas</label></br>
+							<label for="pass" title="password">Password</label></br>
+						</td>
+						<td>
+							<input type="text" name="nama" id="nama" class="input" required autofocus oninvalid="this.setCustomValidity('inputan wajib diisi!');" oninput="this.setCustomValidity('')"></br>
+							<input type="text" name="kelas" id="kelas" class="input" required oninvalid="this.setCustomValidity('inputan wajib diisi!');" oninput="this.setCustomValidity('')"></br>
+							<input type="password" name="Pass" id="password" class="input" required oninvalid="this.setCustomValidity('inputan wajib diisi!');" oninput="this.setCustomValidity('')"></br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="cmd">Komentar</label></br>
+						</td>
+						<td>	
+							&nbsp;&nbsp;<textarea title="komentar" id="komen" class="input" required oninvalid="this.setCustomValidity('inputan wajib diisi!');" oninput="this.setCustomValidity('')"></textarea></br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="tinggal" class="pulau" >Kepulauan</label>
+						</td>
+						<td>
+							<select name="tinggal" id="tinggal" class="input">
+								<!-- <option value="">Pulau</option> -->
+								<option value="Pulau Jawa">Pulau Jawa</option>
+								<option value="Pulau NT">Pulau Nusa Tenggara</option>
+								<option value="pulau sumatra">Pulau Suamatra</option>
+								<option value="pulau kalimantan">Pulau Kaimantan</option>
+							    <option value="lainnya">Lain-Lain</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="jenis">Jenis&nbspKelamin</label>
+						</td>
+						<td class="jenis" id="jenisKelamin">
+							<input type="radio" id="laki" name="jenis" ><label for="laki">Pria</label>
+							<input type="radio" id="perempuan" name="jenis" ><label for="perempuan">Wanita</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="kirim" onclick="isAllDone()" type="submit">kirim</button>
+						</td>
+						<td>
+							<button type="reset">reset</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+		<footer>
+			<span>Copyright by Royhan</span>
+		</footer>
+		<!-- <script src="web.js"></script> -->
+		<script src="web.js"></script>
+	</body>
+	</html>

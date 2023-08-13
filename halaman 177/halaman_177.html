@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halaman 177</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            margin: 60px 0;
+            width: 300px;
+        }
+        .isi_hasil{
+            margin-top: -50px;
+        }
+        label{
+            display: block;
+            margin-top: 50px;
+            margin-bottom: -40px;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" autocomplete="off">
+        <label for="value">isi untuk menghitung kata, kalimat, dan huruf</label>
+        <input type="text" id="value">
+        <button id="to_finish" type="button">Finish</button>
+        <div class="isi_hasil">
+            <div id="hasil_kata"></div>
+            <div id="hasil_kalimat"></div>
+            <div id="hasil_huruf"></div>
+        </div>
+    
+        <label for="angka">isi angka yang akan dirubah menjadi kata</label>
+        <input type="number" id="angka" maxlength="7">
+        <button class="ubah" type="button">Change</button>
+        <div id="hasil_angka"></div>
+        <script src="Script.js"></script>
+    </form>
+</body>
+</html>

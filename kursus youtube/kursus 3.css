@@ -1,0 +1,149 @@
+			.uber{
+				background-color:black;
+				color: white;
+				padding: 10 20 10;
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: 1s;
+				}
+			.amazon{
+				background-color:rgb(255,216,20);
+				color: black;
+				padding: 10 50 10;
+				border: none;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: 1s;
+			}
+			.github{
+				background-color: rgb(46,164,79);
+				color: white;
+				padding: 10px;
+				border: none;
+				font-weight: bold;
+				border-radius: 4px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: 50ms;
+			}
+			.bootstrapstart{
+				background-color: rgb(121,82,179);
+				color: white;
+				padding: 10 15 10;
+				border: none;
+				font-weight: bold;
+				border-radius: 3px;
+				font-size: 10px;
+				margin-bottom: 20px;
+				margin-right: 10px;
+				cursor: pointer;
+				transition:1s;
+			}
+			.bootstrapdownload{
+				background-color: white;
+				color: rgb(108,117,125);
+				font-weight: bold;
+				padding: 10 15 10;
+				font-size: 10px;
+				font-weight: bold;
+				border-color: rgb(108,117,125) ;
+				border-style: solid;
+				border-width: 1px;
+				border-radius: 3px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: 1s;
+			}
+			.apply{
+				background-color:rgb(10,102,192);
+				color: white;
+				font-weight: bold;
+				padding: 10 20 10;
+				border: none;
+				border-radius: 20px;
+				margin-bottom: 40px;
+				margin-right: 10px;
+				cursor: pointer;
+				transition: 1s;
+				}
+			.save{
+				background-color:white;
+				color: rgb(10,102,192);
+				padding: 10 20 10;
+				font-weight: bold;
+				border-style: solid;
+				border-color: rgb(10,102,192);
+				border-width: 1px;
+				border-radius: 20px;
+				margin-bottom: 40px;
+				cursor: pointer;
+				transition: 1s;
+				}
+				.header{
+				font-weight: bold;
+				font-size: 30px;
+				}
+				.cart{
+				background-color:rgb(255,216,20);
+				color: black;
+				padding: 10 20 10;
+				border: none;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				margin-right: 20px;
+				cursor: pointer;
+				}
+				.buy{
+				background-color:rgb(255,164,28);
+				color: black;
+				padding: 10 20 10;
+				border: none;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				}
+				.uber:hover{
+				opacity: 0.7;
+				}
+				.amazon:hover{
+				background-color: rgb(242, 209, 24);
+				}
+				.github:hover{
+				box-shadow: 1px 2px 10px silver;
+				}
+				.bootstrapstart:hover{
+				background-color: rgb(106, 70, 156);
+				}
+				.bootstrapstart:active{
+				background-color: rgb(182, 153, 224);
+				}
+				.bootstrapdownload:hover{
+				background-color: rgb(108,117,125);
+				color: white;
+				}
+				.apply:hover{
+				background-color:rgb(6, 79, 150);
+				}
+				.apply:active, save:active{
+				opacity: 0.6;
+				}
+				.save:hover{
+				background-color:rgb(210, 229, 247);
+				border-width: 1.5px;
+				}
+				.amazon-link:hover{
+				color:red;
+				}
+				.cart:hover{
+				background-color: rgb(145, 141, 3);
+				}
+				.cart:active{
+				opacity:0.5;
+				}
+				.buy:hover{
+				background-color: rgb(176, 114, 21);
+				}
+				.buy:active{
+				opacity:0.5;
+				}

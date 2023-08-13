@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nomer 2</title>
+    <style>
+        /* html{
+            background-image: url('bg.jpeg');
+            background-size: cover;
+        }
+        body {
+            backdrop-filter: blur(2px);
+            width: 100%;
+            height: 100%;
+        } */
+        html{
+            background-image: url('bg2.jpg');
+            background-size: cover;
+            /* filter: brightness(180%) contrast(180%); */
+        }
+        body{
+            /* filter: brightness(40%) contrast(70%); */
+        }
+        .container, .beda{
+            position: relative;
+            left: 0;
+            right: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-top: 20px;
+            display: inline-block;
+        }
+        input, .nomer{
+            border:1px solid rgba(9, 9, 9, 0.397);
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-left: 5px;
+        }
+        form{
+            width: 400px;
+            padding: 30px 20px;
+            background-color: rgb(216, 216, 216);
+            margin: 100px auto;
+            border-radius: 15px;
+            box-shadow: inset 0 0 10px 1px rgba(133, 0, 241, 0.479);
+            /* box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.514); */
+            filter: blur(0px);
+        }
+        form legend{
+            font-weight: bold;
+            font-size: 30px;
+            color: rgba(145, 51, 233, 0.548);
+            -webkit-text-stroke: 2px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        button{
+            position: relative;
+            padding: 10px 20px;
+            width: 160px;
+            left: 120px;
+            /* right: 0; */
+            top: 18px;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            transition: 1.5s;
+            box-sizing: border-box;
+        }
+        button:hover{
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            color: blueviolet;
+            box-shadow: inset 0 0 4px 1px;
+        }
+        .dua input{
+            width: 45%;
+        }
+        .dua #nama_belakang{
+            width: 51%;
+        }
+        .isi_value, .ifNotWork, .isi_value_2, .isi_value_3, .benar_benar_isi{
+            border-radius: 2px;
+            font-size: 13px;
+            color: red;
+            display: none;
+        }
+        #lahir{
+            /* border-color: red; */
+            border-radius: 10px;
+            width: 98%;
+            text-align: center;
+            border: 1px solid gray;
+            background-color: white;
+            color: rgb(112, 112, 112);
+            margin-top: 15px;
+            overflow: auto;
+            /* background-color: gray; */
+        }
+        #lahir span{
+            margin-left: 10px;
+            float: left;
+            margin-top: 2px;
+            font-size: 13px;
+        }
+        #lahir select{
+            border: none;
+            color: rgb(112, 112, 112);
+            margin-left: 23px;
+        }
+        #hubungan{
+            width: 130px;
+        }
+        #nomer{
+            width: 200px;
+        }
+        .account{
+            float: right;
+            position: absolute;
+            top: 21px;
+            right:13px;
+            background-color: rgba(9, 9, 9, 0);
+            border: none;
+            color: rgb(139, 139, 139);
+        }
+        #name{
+            width: 97%;
+        }
+        .tampil{
+            float: right;
+            position: absolute;
+            font-size: 15px;
+            top: 55%;
+            right:17px;
+            color: rgb(139, 139, 139);
+        }
+        #sandi{
+            width: 97%;
+        }
+        input#No{
+            width: 343px;
+        }
+        .isi_atas_button{
+            margin-top: 10px;
+            font-size: 15px;
+            color: rgba(138, 138, 138, 0.623);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <legend>Daftar</legend>
+            <div class="dua">
+                <input type="text" placeholder="Nama depan" onmouseover="runningInputValue('1');" id="nama_depan">
+                <input type="text" placeholder="Nama belakang" id="nama_belakang" onmouseover="runningInputValue('2');">
+            </div>
+            <div class="isi_value">Masukkan nama anda</div>
+            <div class="beda">
+                <input type="text" placeholder="Nama pengguna Yahoo" id="name" onmouseover="runningInputValue('3');">
+                <div class="isi_value_2">isi email anda</div>
+                <select name="acoount" class="account">
+                    <option value="yahoo">yahoo.co.id</option>
+                    <option value="gmail">Gmail.com</option>
+                    <option value="email">email.com</option>
+                </select>
+                <input type="password" onmouseover="runningInputValue('4');" placeholder="Kata Sandi" id="sandi" >
+                <div class="isi_value_3">Masukkan password anda</div>
+                <div class="tampil">
+                    <input type="checkbox" name="tampilkan" onclick="passwordType();">
+                    <label for="tampilkan">Tampilkan</label>
+                </div>
+            </div>
+            <div class="bendera">
+                <div class="merah"></div>
+                <div class="putih"></div>
+            </div>
+            <span> <select class="nomer">
+                <option value="malaysia">+60</option>
+                <option value="malaysia">+62</option>
+            </select><input type="number" placeholder="Nomor ponsel" id="No"></span><br>
+            <div name="tanggal_lahir" id="lahir">
+                <span class="tanggal">Tanggal Lahir</span>
+                <select name="tanggal" id="tanggal">
+                    <option value="">Tanggal</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="bulan" id="bulan">
+                    <option value="">Bulan</option>
+                    <option value="Jan">Januari</option>
+                    <option value="Feb">Februari</option>
+                    <option value="Mar">Maret</option>
+                    <option value="Apr">April</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Jun">Juni</option>
+                    <option value="Jul">Juli</option>
+                    <option value="Agu">Agustus</option>
+                    <option value="Sep">zseptember</option>
+                    <option value="Okt">Oktober</option>
+                    <option value="Nov">November</option>
+                    <option value="Des">Desember</option>
+                </select>
+                <select name="Tahun" id="Tahun">
+                    <option value="">Tahun</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="20010">20010</option>
+                    <option value="20011">20011</option>
+                    <option value="20012">20012</option>
+                    <option value="20013">20013</option>
+                    <option value="20014">20014</option>
+                    <option value="20015">20015</option>
+                    <option value="20016">20016</option>
+                    <option value="20017">20017</option>
+                    <option value="20018">20018</option>
+                </select>
+            </div>
+            <div class="ifNotWork">tanggal lahir harus dimasukkan</div>
+            <span><select class="nomer">
+                <option value="malaysia">+60</option>
+                <option value="malaysia">+62</option>
+            </select><input type="number" placeholder="Nomer" id="nomer"><input type="text" placeholder="Hubungan" id="hubungan"></span>
+            <div class="beda">
+               <input type="radio" id="laki" name="jenis"><label for="laki">Pria</label>
+               <input type="radio" id="perempuan" name="jenis"><label for="perempuan">Wanita</label><br>
+           </div>
+            <div class="isi_atas_button" onmouseover="runningInputValue('6');"><input type="checkbox" name="yakin" id="wajib"><label for="yakin"> Anda harus yakin kalau semua isi dengan benar</label></div>
+            <div class="benar_benar_isi">Anda harus mencentang untuk yakin</div>
+            <button type="button" onclick="sayHello();">Create Account</button>
+        </form>
+    </div>
+    <script src="nomer_2_javscr.js"></script>
+</body>
+</html>

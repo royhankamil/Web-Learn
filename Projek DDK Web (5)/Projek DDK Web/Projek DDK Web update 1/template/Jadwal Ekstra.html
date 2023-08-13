@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMK Negeri 4 Malang - Jadwal Ekstrakulikuler</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo-grafika.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 57%;
+      }
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        font-size: 16px;
+      }
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        background-color: seashell;
+      }
+      tr:nth-child(even) {
+        background-color: white;
+      }
+      </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-bg-primary p-md-3 sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="../index.html">
+          <img
+            src="../assets/img/logo-grafika.png"
+            alt="Bootstrap"
+            width="38"
+            height="44"
+          />
+          <span>SMKN 4 MALANG</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Informasi Sekolah
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../informasi/profil/indeks.html">Profil Sekolah</a></li>
+                <li><a class="dropdown-item" href="../informasi/kepsek/indeks.html">Kepala Sekolah</a></li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/peta dan denah/indeks.html">Peta dan Denah Sekolah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/Visi Misi/indeks.html">Visi Misi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/sejarah/indeks.html">Sejarah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/prestasi/indeks.html">Prestasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/Guru/indeks.html">Guru</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/Galleri/indeks.html">Galeri</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../informasi/Technopark/indeks.html">Technopark</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manajemen
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../manajemen/kurikulum/indeks.html">Kurikulum</a></li>
+                <li><a class="dropdown-item" href="../manajemen/humas/indeks.html">Humas</a></li>
+                <li>
+                  <a class="dropdown-item" href="../manajemen/kesiswaan/indeks.html">Kesiswaan</a>
+                </li>
+                <li><a class="dropdown-item" href="../manajemen/sarpras/indeks.html">Sarpras</a></li>
+                <li><a class="dropdown-item" href="../manajemen/pdsm/indeks.html">PSDM</a></li>
+                <li>
+                  <a class="dropdown-item" href="../manajemen/tata usaha/indeks.html">Tata Usaha</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kompetensi Keahlian
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../kompetensi keahlian/Teknik Grafika/indeks.html">Teknik Grafika</a></li>
+                <li><a class="dropdown-item" href="../kompetensi keahlian/">Perhotelan</a></li>
+                <li><a class="dropdown-item" href="../kompetensi keahlian/Logistik/indeks.html">Logistik</a></li>
+                <li>
+                  <a class="dropdown-item" href="../kompetensi keahlian/Mekatronika/indeks.html">Mekatronika</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../kompetensi keahlian/TKJ/indeks.html">Teknik Komputer Jaringan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../kompetensi keahlian/RPL/indeks.html">Rekayasa Perangkat Lunak</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../kompetensi keahlian/DKV/indeks.html">Desain Komunikasi Visual</a>
+                </li>
+                <li><a class="dropdown-item" href="../kompetensi keahlian/Animasi/indeks.html">Animasi</a></li>
+                <li></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../bursa kerja khusus/indeks.html"
+                >Bursa Kerja Khusus (BKK)</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Siswa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../template/Organisasi.html">Organisasi</a></li>
+                <li><a class="dropdown-item" href="../template/Ektrakurikuler.html">Ekstrakulikuler</a></li>
+                <li>
+                  <a class="dropdown-item" href="../template/Jadwal Ekstra.html">Jadwal Ekstrakulikuler</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../kegiatan ekstra/indeks.html">Kegiatan Ekstrakulikuler</a>
+                </li>
+                <li><a class="dropdown-item" href="../budaya sekolah/indeks.html">Budaya Sekolah</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../berita/page luar/page 1/indeks.html">Berita</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Content Start -->
+   <div class="right">
+    <h5><b>Berita Terbaru</b></h5>
+    <ul type="none">
+      <li><a href="../berita/Berita1/indeks.html">Studi Tiru SMK Negeri 5 Yogyak...</a></li><hr>
+      <li><a href="../berita/Berita2/indeks.html">Guru Tamu Konsentrasi Keahlian...</a></li><hr>
+      <li><a href="../berita/Berita3/indeks.html">Studi Tiru SMK Negeri 6 Suraka...</a></li><hr>
+      <li><a href="../berita/Berita4/indeks.html">Seleksi Alumni oleh PT Mediaqu...</a></li><hr>
+      <li><a href="../berita/Berita5/indeks.html">TKJ Hadirkan NOC dan DevOps En...</a></li>
+    </ul>
+   </div>
+   <article class="content">
+    <br>
+      <h1> Jadwal Ekstrakulikuler </h1>
+      <br>
+      <table>
+        <tr>
+            <th> NO </th>
+            <th> HARI </th>
+            <th> WAKTU </th>
+            <th> JENIS KEGIATAN </th>
+            <th> PEMBINA/PELATIH </th>
+            <th> TEMPAT </th>
+        </tr>
+        <tr>
+            <td> 1  </td>
+            <td> SENIN </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Bola Voli </td> 
+            <td> Igit Agus Sara, S.Pd </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 2  </td>
+            <td> SENIN </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Sepak Bola </td> 
+            <td> M. Aminudin </td>
+            <td> Lapangan Shampo </td> 
+        </tr>
+        <tr>
+            <td> 3  </td>
+            <td> SELASA </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Taruna </td> 
+            <td> M. Rezky Agung Hartono </td>
+            <td> Lapangan Shampo </td> 
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td> SELASA </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Taekwondo </td> 
+            <td> Meta Andrian Setiawan, S.Pd. </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td> SELASA </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Karate </td> 
+            <td> Indra Prabowo </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td> SELASA </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Seni Musik </td> 
+            <td> Indrawan Wahyu, S.Pd.	 </td>
+            <td> Ruang Musik </td> 
+        </tr>
+        <tr>
+            <td> 7 </td>
+            <td> SELASA </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Karawitan </td> 
+            <td> Diyan Permana Putra, S.Sos.	 </td>
+            <td> Ruang Seni Budaya </td> 
+        </tr>
+        <tr>
+            <td> 8 </td>
+            <td> RABU </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Futsal </td> 
+            <td> Idin Yulias, M.Pd. </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 9 </td>
+            <td> RABU </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Paduan Suara </td> 
+            <td> Wahyu Rosita Dewi, SS., M.Pd. </td>
+            <td> Hall Bawah </td> 
+        </tr>
+        <tr>
+            <td> 10 </td>
+            <td> RABU </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Seni Rupa </td> 
+            <td> Mawardi, S.Pd. </td>
+            <td> Ruang 10 </td> 
+        </tr>
+        <tr>
+            <td> 11 </td>
+            <td> KAMIS </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Taruna </td> 
+            <td> M. Rezky Agung Hartono </td>
+            <td> Lapangan Shampo </td> 
+        </tr>
+        <tr>
+            <td> 12 </td>
+            <td> KAMIS </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> GVED </td> 
+            <td> Triyudi Yudawan, S.Pd. </td>
+            <td> Ruang 2 </td> 
+        </tr>
+        <tr>
+            <td> 13 </td>
+            <td> KAMIS </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Seni Tari </td> 
+            <td> Rifka Ferdianti </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 14 </td>
+            <td> KAMIS </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> PMR </td> 
+            <td> Laily Nur Faiza </td>
+            <td> Ruang UKS </td> 
+        </tr>
+        <tr>
+            <td> 15 </td>
+            <td> JUMAT </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Program Roots </td> 
+            <td> Winny Sulistiyani, S.Pd. </td>
+            <td> Ruang BK </td> 
+        </tr>
+        <tr>
+            <td> 16 </td>
+            <td> JUMAT </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> 5R </td> 
+            <td> Novi Ardian, S.Pd </td>
+            <td> Gazebo Depan </td> 
+        </tr>
+        <tr>
+            <td> 17 </td>
+            <td> JUMAT </td> 
+            <td> 13.00 - 16.00 </td>
+            <td> Robotik </td> 
+            <td> M. Satriyo Prijambodo, S.Pd. </td>
+            <td> Lab. Mekatronika Lt. 1 </td> 
+        </tr>
+        <tr>
+            <td> 18 </td>
+            <td> SABTU </td> 
+            <td> 07.00 - 08.00 </td>
+            <td> Pramuka (Wajib) </td> 
+            <td> Wuryandaru, S.Pd. <br>  Rosita D., SS. M.Pd. </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 19 </td>
+            <td> SABTU </td> 
+            <td> 08.30 - 10.00 </td>
+            <td> Pramuka Inti </td> 
+            <td> FU Haryono </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 20 </td>
+            <td> SABTU </td> 
+            <td> 14.00 - 17.00 </td>
+            <td> Bulutangkis </td> 
+            <td> Andrie Setiawan, S.Pd. </td>
+            <td> Lapangan Pegadaian </td> 
+        </tr>
+        <tr>
+            <td> 21 </td>
+            <td> SABTU </td> 
+            <td> 10.00 - 13.00 </td>
+            <td> Taruna </td> 
+            <td> M. Rezky Agung Hartono </td>
+            <td> Lapangan Shampo </td> 
+        </tr>
+        <tr>
+            <td> 22 </td>
+            <td> SABTU </td> 
+            <td> 09.00 - 13.00 </td>
+            <td> Paskibra </td> 
+            <td> Agus Dwi Asmanto </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 23 </td>
+            <td> SABTU </td> 
+            <td> 08.30 - 12.00 </td>
+            <td> BDI </td> 
+            <td> Achmad Cholis M., M.Pd. </td>
+            <td> Masjid Lukmanul Hakim </td> 
+        </tr>
+        <tr>
+            <td> 24 </td>
+            <td> SABTU </td> 
+            <td> 09.00 - 11.00 </td>
+            <td> Pusja </td> 
+            <td> M. Rukhan </td>
+            <td> Perpustakaan </td> 
+        </tr>
+        <tr>
+            <td> 25 </td>
+            <td> SABTU </td> 
+            <td> 09.00 - 11.00 </td>
+            <td> Robotik </td> 
+            <td> M. Satriyo Prijambodo, S.Pd. </td>
+            <td> Lab. Mekatronika Lt. 1 </td> 
+        </tr>
+        <tr>
+            <td> 26 </td>
+            <td> SABTU </td> 
+            <td> 08.00 - 11.00 </td>
+            <td> Pencinta Alam </td> 
+            <td> Feri Priyo Paripurno </td>
+            <td> Wall Climbing </td> 
+        </tr>
+        <tr>
+            <td> 27 </td>
+            <td> SABTU </td> 
+            <td> 09.00 - 13.00 </td>
+            <td> Paskibra </td> 
+            <td> Agus Dwi Asmanto </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 28 </td>
+            <td> SABTU </td> 
+            <td> 08.00 - 11.00 </td>
+            <td> Pencinta Alam </td> 
+            <td> Feri Priyo Paripurno </td>
+            <td> Wall Climbing </td> 
+        </tr>
+        <tr>
+            <td> 29 </td>
+            <td> MINGGU </td> 
+            <td> 07.00 - 12.00 </td>
+            <td> Bola Basket </td> 
+            <td> Dina Charisma Ganda Pratiwi, S.Pd </td>
+            <td> Lapangan Serba Guna </td> 
+        </tr>
+        <tr>
+            <td> 30 </td>
+            <td> MINGGU </td> 
+            <td> 10.00 - 14.00 </td>
+            <td> Airsoftgun </td> 
+            <td> Tian Priantono </td>
+            <td> Ruang 32 dan Labana </td> 
+        </tr>
+        <tr>
+            <td> 31 </td>
+            <td> MINGGU </td> 
+            <td> 10.00 - 13.00 </td>
+            <td> Broadcasting </td> 
+            <td> Andreas Herlambang RM. </td>
+            <td> Hall Lt. 3 </td> 
+        </tr>
+      </table>
+   </article>
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <ul class="social-icon">
+        <li>
+          <a href="https://web.facebook.com/smknegeri4malang" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/smkn4malang.official/"
+            target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/c/SMKN4MalangOfficial"
+            target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/smkn4malang" target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/smkn4malang" target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/search?safe=strict&rlz=1C1CHBD_enID858ID858&ei=AkpNXYGGE4TGvwTWvJSoAQ&q=smkn4malang&oq=smkn4malang&gs_l=psy-ab.3..35i39j0i10i203j0i7i10i30l2j0i10j0i7i10i30j0i7i30j0i10i30j38.69641.69641..69899...0.0..0.64.64.1......0....1..gws-wiz.......0i71.1D-97sG5Pj0&ved=&uact=5"
+            target="_blank"
+            ><ion-icon name="logo-googleplus"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/school/smkn4malang/" target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="" target="_blank"
+            ><ion-icon name="logo-whatsapp"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <div class="cr"><p>©Copyright 2022 X RPL C All Rights Reserved</p></div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="assets/jquery/jquery-3.6.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/splide/dist/js/splide.min.js"></script>
+    <script src="assets/app/script.js"></script>
+  </body>
+</html>

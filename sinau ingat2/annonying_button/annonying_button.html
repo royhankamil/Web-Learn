@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press The Buton</title>
+    <style>
+        html, body, svg{
+            min-height: 100%;
+        }
+        button{
+            padding: 10px 30px;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 8px;
+            /* width: 100px; */
+            font-weight: 700;
+            position: absolute;
+            transition: 2ms;
+        }
+        button:active{
+            color: aquamarine;
+            font-weight: bold;
+            font-size: 13px;
+            background-color: rgb(75, 66, 66);
+        }
+        main{
+            display: flex;
+            width: 120px;
+            margin: 200px auto;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        /* rect{
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin-top: 40px;
+            margin-left: 20px;
+            background-color: rgb(243, 17, 17); 
+         } */
+    </style>
+</head>
+<body>
+    <svg id="thisSv" height = "100%" width ="100%">
+        <rect id="red" width="200" height="100" fill="red">
+    </svg>
+    <main>
+        <button type="button">Press This</button>
+    </main>
+    <script src="script_annonying.js"></script>
+</body>
+</html>
